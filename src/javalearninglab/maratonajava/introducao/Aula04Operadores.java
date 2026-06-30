@@ -48,5 +48,12 @@ public class Aula04Operadores {
         System.out.println("O playstation é comprável: " + isPlaystationCincoCompravel);
         System.out.println("---------------"+"\n");
 
+        // Atribuição = += -= *= /= %=
+        double bonus = 1800;
+        bonus += 1000; //bonus = bonus + 1000;
+        bonus -= 1000;
+        bonus *= 2;
+        bonus /= 2;
+        System.out.println(bonus);
     }
 }
