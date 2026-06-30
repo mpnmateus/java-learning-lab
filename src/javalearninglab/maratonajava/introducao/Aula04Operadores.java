@@ -55,5 +55,18 @@ public class Aula04Operadores {
         bonus *= 2;
         bonus /= 2;
         System.out.println(bonus);
+        System.out.println("---------------"+"\n");
+
+        // Atribuições unárias: incremento (++) ou decremento (--)
+        int contador = 0;
+        contador += 1; //contador = contador + 1;
+        contador++;
+        contador--;
+        System.out.println("O contador está em: " + contador+"\n");
+
+        int contador2 = 0;
+        //System.out.println(++contador2);
+        System.out.println(contador2++); //primeiro executa a impressão, depois soma.
+        System.out.println(contador2);
     }
 }
