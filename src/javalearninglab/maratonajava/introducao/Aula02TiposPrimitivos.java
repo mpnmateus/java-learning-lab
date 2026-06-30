@@ -1,6 +1,6 @@
-package javalearninglab.maratonajava.introducao.aula02;
+package javalearninglab.maratonajava.introducao;
 
-public class TiposPrimitivos {
+public class Aula02TiposPrimitivos {
     public static void main(String[] args){
         // int, double, float, char, byte, short, long, boolean
         int idade = (int) 10000000000L; // Vai forçar para caber, mas vai cortar os bits para caber (não sabemos o que esperar)
