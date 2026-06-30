@@ -13,9 +13,14 @@ public class TiposPrimitivos {
         boolean falso = false;
         char caractere= 'M';
 
+        String nome = "Mateus";
+        var nome2 = "Omitindo o tipo primitivo";
+
         System.out.println("A idade é: " + idade);
         System.out.println(verdadeiro);
         System.out.println(idade);
         System.out.println(numeroGrande);
+        System.out.println("Meu nome é " + nome);
+        System.out.println(nome2);
     }
 }
