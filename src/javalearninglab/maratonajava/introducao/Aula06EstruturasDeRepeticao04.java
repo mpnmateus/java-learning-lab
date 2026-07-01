@@ -4,20 +4,21 @@ public class Aula06EstruturasDeRepeticao04 {
     public static void main(String[] args) {
         // Dado o valor de um carro, descubra em quantas vezes ele pode ser parcelado
         // Condição: valorParcela >= 1000
-        double valorCarro = 30000;
+        double valorCarro = 50000;
         int quantidadeParcelas = 0;
-        double valorParcelaImpressao = 0;
-
-        for(int parcela = 1; parcela <= valorCarro; parcela++){
+        double valorMinimoParcela = 1000;
+        for(int parcela = 1; parcela < valorCarro; parcela++){
             double valorParcela = valorCarro / parcela;
-            if (valorParcela < 1000)
+            if(valorParcela < valorMinimoParcela){
                 break;
-            if (valorParcela >= 1000)
-                quantidadeParcelas++;
-                valorParcelaImpressao = valorParcela;
-            System.out.println("Valor em " + parcela + " parcelas de R$ " + valorParcela);
+            }
+            System.out.println("O valor da parcela em " + parcela + " vezes é : R$ " + valorParcela);
+            quantidadeParcelas++;
         }
-        System.out.println("Um carro de R$ " + valorCarro + " pode ser parcelado em até " + quantidadeParcelas + " vezes de " + valorParcelaImpressao);
+        String relatorio = "Um carro no valor de R$ " + valorCarro + " que deve ter parcelas maiores ou iguais a R$ " + valorMinimoParcela +
+                ", pode ser parcelado em de até " + quantidadeParcelas +
+                " vezes.";
+        System.out.println(relatorio);
 
     }
 }
