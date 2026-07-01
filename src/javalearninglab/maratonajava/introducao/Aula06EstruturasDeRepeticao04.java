@@ -4,6 +4,7 @@ public class Aula06EstruturasDeRepeticao04 {
     public static void main(String[] args) {
         // Dado o valor de um carro, descubra em quantas vezes ele pode ser parcelado
         // Condição: valorParcela >= 1000
+        // Usando o break
         double valorCarro = 50000;
         int quantidadeParcelas = 0;
         double valorMinimoParcela = 1000;
