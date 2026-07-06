@@ -14,9 +14,14 @@ public class CarroTest01 {
         c2.modelo = "weekend";
         c2.ano = 1998;
 
+        // para que um objeto faça referencia a outro:
+        // nesse caso, c1 perde a sua referencia em memoria e nao pode mais acessa-la
+        c1 = c2;
+        System.out.println("Carro 1: ");
         System.out.println(c1.nome);
         System.out.println(c1.modelo);
         System.out.println(c1.ano);
+        System.out.println("\nCarro 2:");
         System.out.println(c2.nome);
         System.out.println(c2.modelo);
         System.out.println(c2.ano);
