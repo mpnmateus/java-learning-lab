@@ -1,4 +1,4 @@
-package javalearninglab.maratonajava.javacore.introducaoclasses.model;
+package javalearninglab.maratonajava.javacore.Aintroducaoclasses.model;
 
 public class Estudante {
     public String nome;
