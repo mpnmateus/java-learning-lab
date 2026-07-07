@@ -40,6 +40,8 @@ public class Calculadora {
     }
 
     public void alteraDoisNumeros(int num1, int num2){
+        // as variaveis de referencia sao criadas dentro do metodo e tem escopo local
+        // se sao do tipo primitivo, recebem apenas copias, nao referencias, entao a variavel original nunca tera seu valor alterado
         num1 = 99;
         num2 = 67;
         System.out.println("Dentro do alteraDoisNumeros");
