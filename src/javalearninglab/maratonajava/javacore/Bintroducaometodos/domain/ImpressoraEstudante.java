@@ -9,5 +9,7 @@ public class ImpressoraEstudante {
         // Usado didaticamente para demonstrar que antes de acabar com a referencia dentro desse escopo, ele altera o estado do objeto
         // Num proximo acesso ao objeto atraves da referencia, teremos o estado ja mudado (anteriormente)
         estudante.nome = "ExemploDoRiscoDePassarReferenciaDeObjetos";
+
+        // Faria mais sentido se fosse uma classe de impressão de relatório genérica
     }
 }
