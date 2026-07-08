@@ -7,11 +7,10 @@ public class FuncionarioTest01 {
         Funcionario funcionario = new Funcionario();
         funcionario.nome = "Mateus";
         funcionario.idade = 32;
-        funcionario.salarios[0] = 2500;
-        funcionario.salarios[1] = 3250.65;
-        funcionario.salarios[2] = 4200.52;
+        // comentado para verificar as medidas de segurança no programa
+        //double[] salarios = new double[]{2500, 3250.65, 4200.52};
 
-        System.out.printf("----- RELATÓRIO ----\n");
+        System.out.println("----- RELATÓRIO ----\n");
         funcionario.imprimeDados();
         funcionario.imprimirMediaSalarial();
     }
