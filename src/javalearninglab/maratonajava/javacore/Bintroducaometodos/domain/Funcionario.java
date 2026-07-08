@@ -1,9 +1,10 @@
 package javalearninglab.maratonajava.javacore.Bintroducaometodos.domain;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+    private double media;
 
     public void imprimeDados(){
         if(this.nome == null || this.nome.isBlank() || this.idade < 0 || this.salarios == null) {
@@ -33,12 +34,33 @@ public class Funcionario {
         if(this.salarios == null || this.salarios.length == 0) {
             return 0;
         }
-        double soma = 0;
-        for(double num: this.salarios) {
-            soma += num;
-        }
 
-        return soma / this.salarios.length;
+        for(double num: this.salarios) {
+            media += num;
+        }
+        media /= this.salarios.length;
+        return media;
+    }
+    public double[] getSalarios(){ return salarios; }
+    public void setSalarios(double[] salarios){ this.salarios = salarios; }
+
+    public String getNome() {
+        return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double getMedia() {
+        return media;
+    }
 }
