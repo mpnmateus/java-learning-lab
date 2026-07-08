@@ -48,4 +48,21 @@ public class Calculadora {
         System.out.println("num1: " + num1);
         System.out.println("num2: " + num2);
     }
+
+    public void somaArray(int[] numeros){
+        int soma = 0;
+        for(int num: numeros){
+            soma += num;
+        }
+        System.out.println("O resultado da soma é: " + soma);
+
+    }
+    //Varargs (transforma os argumentos enviados em um array quando os recebe por parametro
+    public void somaVarArgs(int... numeros){
+        int soma = 0;
+        for(int num: numeros){
+            soma += num;
+        }
+        System.out.println("O resultado da soma é: " + soma);
+    }
 }
