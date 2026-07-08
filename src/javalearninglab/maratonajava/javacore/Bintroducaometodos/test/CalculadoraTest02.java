@@ -2,7 +2,7 @@ package javalearninglab.maratonajava.javacore.Bintroducaometodos.test;
 
 import javalearninglab.maratonajava.javacore.Bintroducaometodos.domain.Calculadora;
 
-public class CalculadoraTeste02 {
+public class CalculadoraTest02 {
     public static void main(String[] args) {
         Calculadora c = new Calculadora();
 
