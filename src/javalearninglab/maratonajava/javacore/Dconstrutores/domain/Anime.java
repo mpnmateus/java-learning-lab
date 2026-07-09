@@ -5,15 +5,22 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
     public Anime(String nome, String tipo, int episodios, String genero){
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
         this.genero = genero;
     }
-    public Anime(){
+    public Anime(String nome, String tipo, int episodios, String genero, String estudio){
+        this(nome, tipo, episodios, genero); // só pode ser chamado dentro de construtores; só pode ser chamado na 1ª linha executável do mesmo
+        this.estudio = estudio;
+    }
 
+    public Anime(){
+        System.out.println("Dentro do construtor sem argumentos.");
     }
 
     public void imprime(){
