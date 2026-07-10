@@ -1,0 +1,4 @@
+Jogador 1 -- 1 Personagem
+Time 1 -- N Jogador
+Jogador N -- 1 Time
+Estudante N -- N Curso
