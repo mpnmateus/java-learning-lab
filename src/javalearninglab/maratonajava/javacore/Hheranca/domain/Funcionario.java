@@ -3,6 +3,10 @@ package javalearninglab.maratonajava.javacore.Hheranca.domain;
 public class Funcionario extends Pessoa{
     private double salario;
 
+    public Funcionario(String nome){
+        super(nome); // Para atender aos requisitos de criação de objeto da superclasse, pq Funcionario é uma Pessoa
+    }
+
     public void imprime(){
         super.imprime();
         System.out.println(this.salario);

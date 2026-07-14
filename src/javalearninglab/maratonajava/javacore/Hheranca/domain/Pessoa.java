@@ -1,10 +1,14 @@
 package javalearninglab.maratonajava.javacore.Hheranca.domain;
 
-public class Pessoa {
+public class Pessoa /*extends Object*/ {
     protected String nome;
     protected String cpf;
     protected Endereco endereco;
 
+    public Pessoa(String nome){
+        /*super(); // Para demonstrar que toda a classe é filha da superclasse Object */
+        this.nome = nome;
+    }
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.cpf);

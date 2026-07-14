@@ -9,16 +9,14 @@ public class HerancaTest01 {
         Endereco endereco = new Endereco(); // comecar criando os objetos pela classe que tem menos relacionamentos (menos dependencias)
         endereco.setRua("Avenida dos anjos");
         endereco.setCep("900200-852");
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Cacau");
+        Pessoa pessoa = new Pessoa("Cacau");
         pessoa.setCpf("2020235236");
         pessoa.setEndereco(endereco);
 
         System.out.println(" --- Pessoa --- " );
         pessoa.imprime();
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Kate");
+        Funcionario funcionario = new Funcionario("Kate");
         funcionario.setCpf("11100011198");
         funcionario.setEndereco(endereco);
         funcionario.setSalario(50000);
