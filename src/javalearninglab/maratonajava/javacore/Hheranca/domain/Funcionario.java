@@ -3,8 +3,18 @@ package javalearninglab.maratonajava.javacore.Hheranca.domain;
 public class Funcionario extends Pessoa{
     private double salario;
 
+    static{
+        System.out.println("Dentro do bloco de incialização estático de Funcionário.");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de Funcionário 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de Funcionário 2");
+    }
     public Funcionario(String nome){
         super(nome); // Para atender aos requisitos de criação de objeto da superclasse, pq Funcionario é uma Pessoa
+        System.out.println("Dentro do construtor de Funcionário");
     }
 
     public void imprime(){
