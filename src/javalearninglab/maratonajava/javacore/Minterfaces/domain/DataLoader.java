@@ -1,9 +1,10 @@
 package javalearninglab.maratonajava.javacore.Minterfaces.domain;
 
+// É um carregador de dados
+// cria métodos públicos e abstratos por padrão
+// não faz sentido ser concreto, porque se eu quero carregar dados, temos opções de onde carregar: banco de dados; arquivo.
 public interface DataLoader {
-    // É um carregador de dados
-    // cria métodos públicos e abstratos por padrão
-    // não faz sentido ser concreto, porque se eu quero carregar dados, temos opções de onde carregar: banco de dados; arquivo.
+    public static final int MAX_DATA_SIZE = 10; // tds atributos em uma interface são constantes
 
     public abstract void load(); // = void load();
 
@@ -12,6 +13,11 @@ public interface DataLoader {
     // Para isso, criaram uma forma de possibilitar métodos concretos (que não obrigam a sua implementação)
     default void checkPermission(){
         System.out.println("Fazendo checagem de permissões.");
+    }
+
+    // métodos estáticos nunca serão sobrescritos, pois pertencem à classe (nesse caso, interface)
+    public static void retrieveMaxDataSize(){
+        System.out.println("Dentro do retrieveDataSize na interface.");
     }
 
 }
