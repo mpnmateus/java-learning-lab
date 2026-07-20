@@ -13,6 +13,10 @@ public class CalculadoraImposto {
         System.out.println("Produto: " + produto.getNome());
         System.out.println("Valor: " + produto.getValor());
         System.out.println("Imposto: " + imposto);
+        if(produto instanceof Tomate){
+            Tomate tomate = (Tomate) produto;
+            System.out.println("Data de validade: " + tomate.getDataValidade());
+        }
     }
 
    // Esses dois métodos abaixo nem precisam existir, pois trazem acoplamento, tornam a classe pouco extensível
