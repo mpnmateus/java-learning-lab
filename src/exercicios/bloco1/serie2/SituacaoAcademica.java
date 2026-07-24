@@ -20,10 +20,8 @@ public class SituacaoAcademica {
             System.out.println("Aprovado.");
         } else if ((media < 70) && (frequencia >= 70)) {
             System.out.println("Em recuperação.");
-        } else if (frequencia < 70){
-            System.out.println("Reprovado por falta.");
         } else {
-            System.out.println("Reprovado");
+            System.out.println("Reprovado por falta.");
         }
     }
 }
