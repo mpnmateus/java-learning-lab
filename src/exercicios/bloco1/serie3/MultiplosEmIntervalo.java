@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MultiplosEmIntervalo {
     public static void main(String[] args) {
+        // Receba início, fim e divisor. Mostre todos os valores divisíveis pelo divisor e a quantidade encontrada.
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite um nº para iniciar as divisões: ");
         int inicio = sc.nextInt();

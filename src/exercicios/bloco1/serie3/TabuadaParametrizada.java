@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TabuadaParametrizada {
     public static void main(String[] args) {
+        // Receba um número e os limites inicial e final da tabuada. Permita intervalos crescentes ou decrescentes.
         Scanner sc = new Scanner(System.in);
         System.out.println("Informe um número para expor a tabuada: ");
         int num = sc.nextInt();

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class SomatorioEMedia {
     public static void main(String[] args) {
+        // Receba uma quantidade N de números e apresente soma, média, maior e menor valor. Não use arrays.
         Scanner sc = new Scanner(System.in);
         System.out.println("Quantos números você quer informar: ");
         int quantidade = sc.nextInt();
