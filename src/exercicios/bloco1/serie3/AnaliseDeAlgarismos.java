@@ -11,10 +11,20 @@ public class AnaliseDeAlgarismos {
         // resto da divisao por 10 encontra o ultimo algarismo
         // divisao inteira por 10 remove o ultimo algarismo
         int resto = 0;
-        int ultimo= 0;
-        while(resto != 0 ) {
-            ultimo = num % 10;
-            int ultimoNumero = resto % 10; // pegar o ultimo numero
+        int soma= 0;
+        int quantidade = 0;
+        String invertido = "";
+        while((int)num / 10 != 0 ) {
+            soma += num % 10; // encontra o último algarismo
+            invertido += num % 10;
+            num = num / 10; // remove o último algarismo
+            quantidade++;
         }
+        int quantidadeFinal = quantidade + 1;
+        int somaFinal = num + soma;
+        String invertidoFinal = invertido + num;
+        System.out.println("Soma dos algarismos: " + somaFinal);
+        System.out.println("Quantidade dos algarismos: " + quantidadeFinal);
+        System.out.println("Algarismos invertidos: " + invertidoFinal);
     }
 }
