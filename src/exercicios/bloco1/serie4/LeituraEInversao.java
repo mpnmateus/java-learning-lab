@@ -2,6 +2,7 @@ package exercicios.bloco1.serie4;
 
 public class LeituraEInversao {
     public static void main(String[] args) {
+        // Preencha um array com dez números e apresente seus elementos na ordem original e na ordem inversa.
         int limite = 10;
         int[]array = new int[limite];
 
